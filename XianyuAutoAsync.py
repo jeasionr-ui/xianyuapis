@@ -401,7 +401,7 @@ class XianyuLive:
         }
         async with websockets.connect(
             self.base_url,
-            additional_headers=headers
+            extra_headers=headers
         ) as websocket:
             await self.init(websocket)
             await self.create_chat(websocket, toid, item_id)
@@ -673,7 +673,7 @@ class XianyuLive:
                     
                     async with websockets.connect(
                         self.base_url,
-                        additional_headers=headers
+                        extra_headers=headers
                     ) as websocket:
                         self.ws = websocket
                         await self.init(websocket)

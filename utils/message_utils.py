@@ -4,7 +4,7 @@ from typing import Dict, Any
 def format_message(message_data: Dict[str, Any], is_outgoing: bool = False, is_manual: bool = False) -> str:
     """格式化消息输出"""
     try:
-        # 获取消息内容
+        # 获取消息内容2
         content = message_data.get('content', '')
         if not content:
             return ''
